@@ -4,6 +4,7 @@ import './App.css';
 import tasks from './example/tasks.json';
 
 import Tasks from './components/Tasks';
+import TaskForm from './components/TaskForm';
 
 //console.log(tasks)
 
@@ -27,6 +28,7 @@ class App extends Component {
 
   render(){
     return <div>
+      <TaskForm/>
       <Tasks tasks = {this.state.tasks}/>
     </div>
   }
